@@ -496,7 +496,7 @@ function MonthAndYear({
             <select
               value={focusedDate.getMonth()}
               onChange={e => changeShownDate(Number(e.target.value), 'setMonth')}
-              aria-label={ariaLabels.monthPicker}>
+              aria-label='selecione o mês'>
               {monthNames.map((monthName: string, i: number) => (
                 <option key={i} value={i}>
                   {monthName}
@@ -509,7 +509,7 @@ function MonthAndYear({
             <select
               value={focusedDate.getFullYear()}
               onChange={e => changeShownDate(Number(e.target.value), 'setYear')}
-              aria-label={ariaLabels.yearPicker}>
+              aria-label='selecione o ano'>
               {new Array(upperYearLimit - lowerYearLimit + 1)
                 .fill(upperYearLimit)
                 .map((val, i) => {
